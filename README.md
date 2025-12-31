@@ -1,2 +1,3 @@
 # Tech-plix-Studio-Dev
-Tech-plix Studio Devloper Side code
+Tech-plix Studio Developer Side code
+techplixstudio.com/
