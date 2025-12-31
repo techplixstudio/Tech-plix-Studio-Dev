@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "SangBleu Empire";
+  src: url("./fonts/SangBleuEmpireTrial-Regular.woff2") format("woff2"),
+       url("./fonts/SangBleuEmpireTrial-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  height: 100vh;
+  overflow: hidden;
+  padding: 50px 70px;
+}
+
+/* BACKGROUND TECH SVG */
+.bg-pattern {
+  position: absolute;
+  right: -250px;
+  bottom: -250px;
+  width: 700px;
+  height: 700px;
+  background-size: contain;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+
+.bg-pattern svg {
+  width: 50%;
+  height: 50%;
+}
+
+/* HEADER */
+.logo {
+  width: 160px;
+}
+
+/* MAIN CONTENT */
+.content {
+  margin-top: 110px;
+  max-width: 950px;
+}
+
+
+h1 {
+  font-family: 'SangBleuEmpireTrial-Regular';
+  font-size: 104px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+
+
+.subtitle {
+  margin-top: 30px;
+  margin-bottom: 55px;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+/* COUNTDOWN */
+.countdown {
+  display: flex;
+  align-items: center;
+}
+
+.time-box {
+  border: 1px solid #000;
+  padding: 18px 22px;
+  text-align: center;
+  min-width: 92px;
+  transition: all 0.3s ease;
+}
+
+.time-box:hover {
+  border-color: #ed2d3c;
+  color: #ed2d3c;
+}
+
+.time-box span {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.time-box small {
+  display: block;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.colon {
+  font-size: 30px;
+  margin: 0 18px;
+}
+
+/* NOTIFY */
+.notify {
+  position: absolute;
+  right: 80px;
+  bottom: 70px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.notify input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 260px;
+  padding: 10px 4px;
+  font-size: 13px;
+  outline: none;
+}
+
+.notify input:focus {
+  border-color: #ed2d3c;
+}
+
+/* CIRCLE BUTTON */
+.notify-circle {
+  width: 200px;
+  height: 200px;
+  border: 0px solid #000;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.notify-circle:hover {
+  border-color: #ed2d3c;
+}
+
+.notify-circle svg {
+  width: 100%;
+  height: 100%;
+  animation: rotate 10s linear infinite;
+}
+
+.notify-circle text {
+  font-size: 20px;
+  letter-spacing: 2px;
+  fill: #000;
+}
+
+.notify-circle:hover text {
+  fill: #ed2d3c;
+}
+
+.arrow {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  pointer-events: none;
+}
+
+/* ANIMATION */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  body {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  .notify {
+    position: static;
+    margin-top: 80px;
+  }
+}
