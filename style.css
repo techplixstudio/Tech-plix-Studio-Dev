@@ -1,7 +1,7 @@
 @font-face {
   font-family: "SangBleu Empire";
-  src: url("./fonts/SangBleuEmpireTrial-Regular.woff2") format("woff2"),
-       url("./fonts/SangBleuEmpireTrial-Regular.woff") format("woff");
+  src: url("Fonts/SangBleuEmpireTrial-Regular.woff2") format("woff2"),
+       url("Fonts/SangBleuEmpireTrial-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -57,13 +57,16 @@ body {
 
 
 h1 {
-  font-family: 'SangBleuEmpireTrial-Regular';
+  font-family: 'SangBleu Empire', serif;
   font-size: 104px;
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 0 0.5px #000, 0 0 0.5px #000;
 }
-
 
 
 .subtitle {
